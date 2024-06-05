@@ -1,0 +1,5442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Icon" href="Circle (2).png">
+    <title>SlabShop.com</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+}
+
+.container2{
+    width: 100%;
+    height: 100%;
+    margin-top: 25px;
+}
+
+.Navbar{
+    width: 100%;
+    height: 50px;
+    background-color: rgba(19, 17, 17, 0.955);
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+}
+
+.left{
+    height: 100%;
+    display: flex;
+    gap: 15px;
+    margin-left: 2%;
+    align-items: center;
+}
+
+.left li {
+    height: 100%;
+    width: fit-content;
+    list-style: none;
+    text-decoration: none;
+    align-items: center;
+}
+
+.left li a{
+    height: 100%;
+    width: fit-content;
+    color: white;
+    font: icon;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+
+.right{
+    height: 100%;
+    display: flex;
+    gap: 15px;
+    margin-right: 2%;
+    align-items: center;
+}
+
+.right li {
+    height: 100%;
+    width: fit-content;
+    list-style: none;
+    text-decoration: none;
+}
+
+.right li a{
+    height: 100%;
+    width: fit-content;
+    color: white;
+    font: icon;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.Img1 , .Img2 {
+    display: flex;
+}
+
+.Navbar2{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+.left2{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.slab{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: fit-content;
+    gap: 15px;
+    margin-left: 2%;
+
+}
+
+.slab img{
+    width: 40px;
+    height: 40px;   
+}
+
+.slab h2 {
+    font: icon;
+    font-size: 20px;
+}
+
+.location{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    height: 100%;
+    width: fit-content;
+}
+
+.locaImg{
+    display: flex;
+    align-items: center;
+}
+
+.location2{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    height: 100%;
+    width: fit-content;
+}
+
+.location2 p{
+    font: icon;
+    font-size: 15px;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 680px;
+}
+
+.search{
+    display: flex;
+    height: 40px;
+    position: relative;
+    width: 548px;
+}
+
+.center button{
+    width: 116px;
+    height: 38px;
+    padding: 8px 16px 8px 20px;
+    border-radius: 8px;
+    background-color: #52057B;
+    color: white;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    width: 548px;
+}
+
+.searchImg{
+    position: absolute;
+    right: 10px;
+    top: 9px;
+}
+
+.right2{
+    display: flex;
+    height: 100%;
+    width: fit-content;
+    align-items: center;
+    gap: 25px;
+    margin-right: 2%;
+}
+.Icons{
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.tex1{
+    font: icon;
+}
+
+.tex2{
+    font: icon;
+    color: green;
+}
+
+.profile p {
+    margin: 0;
+    padding: 0;
+}
+
+.Navbar3{
+   width: 100%;
+   height: 48px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin-top: 15px;
+   border-top: solid 1px black;
+   border-bottom: solid 1px black;
+}
+
+.left3{
+    display: flex;
+    gap: 15px;
+    margin-left: 2%;
+    cursor: pointer;
+}
+.left3 li {
+    list-style: none;
+}
+
+.left3 a{
+    font: icon;
+    font-size: 12px;
+    color: black;
+}
+
+.right3{
+    display: flex;
+    align-items: center;
+    margin-right: 2%;
+    gap: 10px;
+    cursor: pointer;
+}
+
+
+.right3 p{
+    font: icon;
+    color: black;
+    font-size: 12px;
+}
+
+.right3Img{
+    display: flex;
+}
+
+.banner{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    gap: 24px;
+    justify-content: space-between;
+}
+
+.banner1{
+    margin-left: 2%;
+    display: flex;
+    justify-content: left;
+}
+
+.banner1 img , .banner2 img{
+    width: 100%;
+    height: 100%;
+}
+
+.banner2{
+    margin-right: 2%;
+    display: flex;
+    justify-content: right;
+}
+
+
+.slider{
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.wertilebi{
+    width: 50%;
+    display: flex;
+    gap: 1%;
+    align-items: center;
+    margin-left: 3%;
+}
+
+.dot1{
+    width: 25px;
+    height: 10px;
+    border: 1px;
+    border-radius: 100px;
+    background:#52057B;
+}
+
+.dot{
+    width: 10px;
+    height: 10px;
+    border: 1px;
+    border-radius: 100px;
+    background: #828282;
+
+}
+
+.Gadartva{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 5%;
+    margin-right: 3%;
+}
+
+.back{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.BackImg{
+    display: flex;
+}
+
+.back p{
+    font: icon;
+}
+
+.Next{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.Next p{
+    color: #52057b;
+    font: icon;
+}
+
+.NextImg{
+    display: flex;
+}
+
+.container3{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    margin-top: 25px;
+}
+
+.BillImg{
+    margin-left: 2%;
+    width: 322px;
+    height: 322px;
+}
+
+.BillImg img{
+    width: 100%;
+    height: 100%;
+}
+
+.Sigup{
+    border: 5px solid;
+    width: 1000px;
+    margin-right: 2%;
+    /* height: 100%; */
+    border-radius: 10px;
+    border-color: #ccc;
+    height: fit-content;
+}
+
+.TopLine{
+    width: 100%;
+    border-bottom: solid;
+    border-color: #ccc;
+}
+
+.TopFirst{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+
+.First{
+    font: icon;
+    font-size: 25px;
+}
+
+.TopSecond{
+    display: flex;
+    gap: 20px;
+    padding: 0px 20px 20px 20px;
+    align-items: center;
+    font: icon;
+    font-size: 15px;
+}
+
+.balance{
+    color: #52057B;
+    font: icon;
+    font-size: 15px;
+}
+
+.Second button{
+    font: icon;
+    height: 35px;
+    width: 80px;
+    /* top: 0px; */
+    border-radius: 8px;
+    border: 1px solid rgba(226, 226, 226, 1);
+    /* display: flex; */
+    /* margin-right: 2%; */
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: space-evenly;
+}
+
+.Topline2{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 25px;
+    align-items: center;
+}
+
+.Code{
+    padding-left: 20px;
+    font: icon;
+}
+
+.Payment{
+    padding-right: 20px;
+    font: icon;
+}
+
+.SecondLine{
+    display: flex;
+    width: 100%;
+    /* gap: 5%; */
+    margin-top: 25px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.FirstInput{
+    width: 40%;
+    padding-left: 20px;
+}
+
+.FirstInput input[type="text"]{
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.SecondInput{
+    width: 45%;
+    padding-right: 20px;
+}
+
+.SecondInput input[type="text"]{
+    width: 95%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.BottomLine button{
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    padding: 10px 16px 10px 16px;
+    background: #52057B;
+    color: white;
+    gap: 15px;
+    font: icon;
+    border-radius: 8px;
+}
+
+.BottomLine{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 100%;
+}
+
+.help{
+    margin-right: 20px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.help p{
+    font: icon;
+    font-size: 14px;
+}
+
+.CenterLine{ 
+    width: 100%;
+}
+
+.category{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 45px;
+    flex-wrap: wrap;
+}
+  
+.flexbox{
+    width: 80px;
+    height: 138px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    align-items: center;
+}
+  
+.Top{
+    display: flex;
+    align-items: center;
+}
+  
+.botom{
+    text-align: center;
+    font: icon;
+    font-size: 15px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.container4{
+    display: flex;
+    flex-direction: column;
+    margin-top: 45px;
+}
+
+.TextCon{
+    font: icon;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 2%;
+    font-size: 35px; 
+}
+
+.flexbox1 {
+    width: 80px;
+    height: 138px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    align-items: center;
+    padding-left: 2%;
+
+}
+
+.flexbox2 {
+    width: 80px;
+    height: 138px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    align-items: center;
+    padding-right: 2%;
+
+}
+
+.FlashSale{
+    width: 100%;
+    height: 486px;
+    background-color: #F9F9F9;
+    margin-top: 35px;
+}
+
+.title{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2%;
+    padding-top: 25px;
+    align-items: center;
+}
+
+.title h2{
+    font: icon;
+    font-size: 30px;
+}
+
+.time{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding-right: 2%;
+}
+
+.time p {
+    font: icon;
+    font-size: 18px;
+}
+
+.timends{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.time1{
+    border-style: solid;
+    height: fit-content;
+    padding: 2px;
+    color: white;
+    border-color: #52057B;
+    background: #52057B;
+    border-radius: 5px;
+}
+
+.cards{
+    margin-left: 2%;
+    margin-top: 2%;
+    margin-right: 2%;
+}
+
+.card{
+    border: solid;
+    width: fit-content;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 0px 16px 0px;
+    border-color: #ccc;
+}
+
+.ImgCard{
+    width: 100%;
+    height: 100%;
+}
+
+.tite{
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+    font: icon;
+    padding-top: 10px;
+    gap: 10px;
+}
+
+.p{
+    font-size: 12px;
+    color: #ccc;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.status{
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.price{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    align-items: center;
+}
+
+.Dolar{
+    color: #828282;
+    margin-left: 15px;
+    font: icon;
+    display: flex;
+    gap: 5px;
+}
+
+.line{
+    border: solid;
+    position: absolute;
+    top: 14px;
+    left: 15px;
+    width: 45px;
+    border-bottom: 0px;
+    border-color: #828282;
+    font: icon;
+}
+
+.p2{
+    margin-right: 15px;
+    border: solid;
+    padding: 4px;
+    border-radius: 5px;
+    background: #FF00001A;
+    border-color: #ff00001A;
+}
+
+.p2 p{
+    font: icon;
+    color: #FF0000;
+}
+
+.Status{
+    width: 100%;
+    display: flex;
+    justify-content: space-between; 
+}
+
+.loadbar{
+    width: 120px;
+    border: solid;
+    margin-left: 10px;
+    border-radius: 7px;
+    border-color: #F3F3F3;
+}
+
+.orangebar{
+    width: 50%;
+    background: orange;
+    height: 100%;
+    border: 1px;
+    border-radius: 5px;
+    margin: 0;
+}
+
+.sold{
+    padding-right: 15px;
+    font: icon;
+    font-size: 12px;
+    color: #828282;
+}
+
+.NewFeatures{
+    width: 100%;
+    margin-top: 60px;
+    height: 500px;
+}
+
+.top{
+    height: 245px;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.text10{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.text10 p{
+    font: icon;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.btn{
+    border: solid;
+    border-radius: 8px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    color: #52057B;
+    border-color: #52057B1A;
+    background: #52057B1A;
+    font: icon;
+}
+
+.cads{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+.toptex{
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}  
+
+.toptex p{
+    color: white;
+    font: icon; 
+}
+
+.cad-1{
+    width: 263px;
+    height: 111px;
+    padding: 16px 24px 16px 24px;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #BF5AE0 0%, #A811DA 100%);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.lastline{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Product{
+    font: icon;
+    color: white;
+}
+
+.stock{
+    font: icon;
+    color: white;
+}
+
+.cad-2{
+    width: 263px;
+    height: 111px;
+    padding: 16px 24px 16px 24px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background: linear-gradient(90deg, #06BEB6 0%, #48B1BF 100%);
+}
+
+.cad-3{
+    width: 263px;
+    height: 111px;
+    padding: 16px 24px 16px 24px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background: linear-gradient(90deg, #F85032 0%, #E73827 100%);
+}
+
+.cad-4{
+    width: 263px;
+    height: 111px;
+    padding: 16px 24px 16px 24px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background: linear-gradient(90deg, #FE8C00 0%, #F83600 100%);
+}
+
+.cad-5{
+    width: 263px;
+    height: 111px;
+    padding: 16px 24px 16px 24px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background: linear-gradient(90deg, #F857A6 0%, #FF5858 100%);
+}
+
+.BottomCard{
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.btCard-1{
+    width: 329px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    border-radius: 15px;
+    border: 1px solid;
+    border-color: #E2E2E2;
+    padding: 24px;
+}
+
+.btTopline{
+    display: flex;
+    justify-content: space-between;
+    width: 281px;
+    height: 46px;
+    gap: 11px;
+    font: icon;
+    align-items: center;
+}
+
+.blueLine{
+    border-left: solid;
+    border-color: #0052D4;
+    width: 4px;
+    height: 46px;
+}
+
+.btImage{
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+}
+.btImage img{
+    width: 100%;
+    height: 100%;
+}
+
+.distance{
+    border: solid;
+    border-top: 0px;
+    border-left: 0px;
+    border-radius: 0px;
+    margin-left: 2%;
+    margin-right: 2%;
+    border-color: #E2E2E2;
+}
+
+.btCard-2{
+    width: 329px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    border-radius: 15px;
+    border: 1px solid;
+    border-color: #E2E2E2;
+    padding: 24px;
+}
+
+.PinkLine{
+    border-left: solid;
+    border-color:#EC008C;
+    width: 4px;
+    height: 46px;
+}
+
+.btCard-3{
+    width: 329px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    border-radius: 15px;
+    border: 1px solid;
+    border-color: #E2E2E2;
+    padding: 24px;
+}
+
+.PurpleLine{
+    border-left: solid;
+    border-color:#892CDC;
+    width: 4px;
+    height: 46px;
+}
+
+.btCard-4{
+    width: 329px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    border-radius: 15px;
+    border: 1px solid;
+    border-color: #E2E2E2;
+    padding: 24px;
+}
+
+.Orange1Line{
+    border-left: solid;
+    border-color:#E73827;
+    width: 4px;
+    height: 46px;
+}
+
+.orangebar1{
+    width: 85%;
+    background: orange;
+    height: 100%;
+    border: 1px;
+    border-radius: 5px;
+    margin: 0;
+}
+
+.orangebar2{
+    width: 25%;
+    background: orange;
+    height: 100%;
+    border: 1px;
+    border-radius: 5px;
+    margin: 0;
+}
+
+.orangebar3{
+    width: 90%;
+    background: orange;
+    height: 100%;
+    border: 1px;
+    border-radius: 5px;
+    margin: 0;
+}
+
+.orangebar4{
+    width: 60%;
+    background: orange;
+    height: 100%;
+    border: 1px;
+    border-radius: 5px;
+    margin: 0;
+}
+
+
+.cadt-1{
+    width: 259px;
+    height: 367px;
+    border-radius: 8px;
+    border: solid;
+    border-color: #E2E2E2;
+    padding-bottom: 5px;
+}
+
+.contentcad-1{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+
+.titlecad-1{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.label p{
+    margin: 0;
+}
+
+.titlecad-1 p{
+    margin: 0;
+}
+
+.Img2cad-1{
+    display: flex;
+}
+
+.BottomStatus{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.pricecad-1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pricecad-1 p{
+    margin: 0;
+}
+
+.ratingcad-1{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.ratingcad-1 p{
+    margin: 0;
+}
+
+.informationcad-1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Img3cad-1{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.Img3cad-1 p{
+    margin: 0;
+}
+
+.informationcad-1 p{    
+    margin: 0;
+}
+
+.label{
+    border: solid;
+    width: fit-content;
+    border-radius: 4px;
+    padding: 2px;
+    border-color: #52057B1A;
+    background: #52057B1A;
+    color: #52057B;
+    font: icon;
+    font-size: 14px;
+}
+
+.titlecad-1 p{
+    font: icon;
+    font-size: 14px;
+}
+
+.pricecad-1 p{
+    font: icon;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.ratingcad-1 p{
+    font: icon;
+    font-size: 18px;
+}
+
+.informationcad-1 p{
+    font: icon;
+    color: #828282;
+    font-size: 14px;
+}
+
+.cardTop{
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.Product10{
+    padding-left: 2%;
+    padding-right: 2%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.TopTitleLIne{
+    font: icon;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.cardsBottom{
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.contentcad-1-2{
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.banner10{
+    width: 100%;
+    height: 100%;
+
+}
+
+.banner10  img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.BstCard-1{
+    width: 259px;
+    height: 330px;
+    border-radius: 8px;
+    border: 1px solid;
+    border-color: #E2E2E2;
+}
+
+.Img1BstCard-1{
+    width: 100%;
+    height: 201px;
+}
+
+.Img1bst{
+    position: relative;
+}
+
+.Img2bst{
+    position: absolute;
+    top: 130px;
+    left: 90px;
+}
+
+.NameShop{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.NameShop p{
+    margin: 0;
+    font: icon;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.Verification{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font: icon;
+    color: #4364F7;
+    font-size: 14px;
+}
+
+.Verification p{
+    margin: 0;
+}
+
+.ImgVer{
+    display: flex;
+}
+
+.contentFlex{
+    display: flex;
+    justify-content: space-around;
+}
+
+.bottomfirsthaf{
+    text-align: center;
+    font: icon;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.topfirsthaf{
+    font: icon;
+    color: #828282;
+}
+
+.BestShopText{
+    font: icon;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.bestCards{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.BestShop{
+    margin-top: 55px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.ShopBest{
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+}
+
+.MaincontentBstCard-1{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.contentcad-1-2-2{
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.FinalContent{
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 50px;
+}
+
+.Vector9{
+    border: 1px solid;
+    border-color: #E2E2E2;
+}
+
+.FinalText{
+    padding-top: 35px;
+    padding-bottom: 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.FText{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.FText h2{
+    font: icon;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.FText p{
+    font: icon;
+    font-size: 14px;
+    font-weight: 400;
+    color: #828282;
+}
+
+.FinalBtn{
+    border: solid;
+    display: flex;
+    width: 128px;
+    height: 42px;
+    border-radius: 8px;
+    border-color: #52057B;
+    background: #52057B;
+    color: white;
+    font: icon;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.Brands{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.Brands h2{
+    font: icon;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.FinalContentText{
+    display: flex;
+    justify-content: space-between;
+}
+
+.FinalCard-1 , .FinalCard-2 , .FinalCard-3 , .FinalCard-4 , .FinalCard-5 , .FinalCard-6 , .FinalCard-7 , .FinalCard-8{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: fit-content;
+}
+
+.FinalCard-1 h2  , .FinalCard-2 h2, .FinalCard-3 h2, .FinalCard-4 h2 , .FinalCard-5 h2, .FinalCard-6 h2, .FinalCard-7 h2 , .FinalCard-8 h2{
+    font: icon;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.FashionText{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.FashionText p{
+    font: icon;
+    font-size: 16px;
+    font-weight: 500;
+    color: #828282;
+}
+
+.Peyment{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.Peyment h2{
+    font: icon;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.Finalimgaes{
+    display: flex;
+    justify-content: space-between;
+}
+
+.SlabsShopFinal{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.SlabShopText{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.SlabShopText h2{
+    font: icon;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.SlabText{
+    font: icon;
+}
+
+.SlabShopText-2{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.SlabShopText-2 h2{
+    font: icon;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.SlabShopText-2 p{
+    font: icon;
+}
+
+.BoldText{
+    font: icon;
+    font-size: 17px;
+    font-weight: 1000;
+    cursor: pointer;
+}
+
+.lastText{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    margin-bottom: 35px;
+}
+
+.LastLeft{
+    font: icon;
+}
+
+.LastRight{
+    display: flex;
+    gap: 20px;
+    cursor: pointer;
+    font: icon;
+}
+
+.Hide{
+    display: none;
+}
+
+.Show{
+    font: icon;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.Hide{
+    font: icon;
+
+}
+
+@media (max-width:756px){
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    
+    .MainConatinerforall{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .container{
+        width: 756px;
+        height: 100%;
+    }
+    
+    .Navbar{
+        width: 100%;
+        height: 50px;
+        background-color: rgba(19, 17, 17, 0.955);
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .left{
+        height: 100%;
+        display: flex;
+        gap: 10px;
+        margin-left: 2%;
+        align-items: center;
+    }
+    
+    .left li {
+        height: 100%;
+        width: fit-content;
+        list-style: none;
+        text-decoration: none;
+        align-items: center;
+    }
+    
+    .left li a{
+        height: 100%;
+        width: fit-content;
+        color: white;
+        font: icon;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        font-size: 12px;
+    }
+    
+    
+    .right{
+        height: 100%;
+        display: flex;
+        gap: 10px;
+        margin-right: 2%;
+        align-items: center;
+    }
+    
+    .right li {
+        height: 100%;
+        width: fit-content;
+        list-style: none;
+        text-decoration: none;
+    }
+    
+    .right li a{
+        height: 100%;
+        width: fit-content;
+        color: white;
+        font: icon;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        font-size: 12px;
+    }
+    
+    .Img1 , .Img2 {
+        display: flex;
+    }
+    
+    .Navbar2{
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+        justify-content: space-between;
+    }
+    
+    .left2{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .slab{
+        display: flex;
+        align-items: center;
+        height: 100%;
+        width: fit-content;
+        gap: 5px;
+        margin-left: 2%;
+    }
+    
+    .slab img{
+        width: 30px;
+        height: 30px;
+    }
+    
+    .slab h2 {
+        font: icon;
+        font-size: 12px;
+    }
+    
+    .location{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        height: 100%;
+        width: fit-content;
+    }
+    
+    .locaImg{
+        display: flex;
+        align-items: center;
+    }
+    
+    .locaImg img{
+        width: 10px;
+        height: 10px;
+    }
+    
+    .location2{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        height: 100%;
+        width: fit-content;
+    }
+    
+    .location2 p{
+        font: icon;
+        font-size: 12px;
+    }
+    
+    .locaImg2 img{
+        width: 5px;
+        height: 5px;
+    }
+    
+    .center{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: fit-content;
+    }
+    
+    .search{
+        display: flex;
+        height: 35px;
+        position: relative;
+        width: fit-content;
+    }
+    
+    .center button{
+        width: fit-content;
+        height: 35px;
+        padding: 10px;
+        border-radius: 8px;
+        background-color: #52057B;
+        color: white;
+        margin-left: 10px;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        font-size: 10px;
+    }
+    
+    .search input[type="text"] {
+        padding: 10px;
+        font-size: 12px;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+        width: 200px;
+    }
+    
+    .searchImg{
+        position: absolute;
+        right: 10px;
+        top: 7px;
+    }
+    
+    .right2{
+        display: flex;
+        height: 100%;
+        width: fit-content;
+        align-items: center;
+        gap: 10px;
+        margin-right: 2%;
+    }
+    
+    .Icons{
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        cursor: pointer;
+    }
+    
+    .Icons img{
+        width: 20px;
+        height: 20px;
+    }
+    
+    .profile{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        cursor: pointer;
+    }
+    
+    .Img3 img{
+        width: 35px;
+        height: 35px;
+    }
+    
+    .text{
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+    }
+    
+    .tex1{
+        font: icon;
+        font-size: 13px;
+    }
+    
+    .tex2{
+        font: icon;
+        color: green;
+        font-size: 13px;
+    }
+    
+    .profile p {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .Navbar3{
+        width: 100%;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 15px;
+        border-top: solid 1px black;
+        border-bottom: solid 1px black;
+    }
+    
+    .left3{
+        display: flex;
+        gap: 15px;
+        margin-left: 2%;
+        cursor: pointer;
+    }
+    .left3 li {
+        list-style: none;
+    }
+    
+    .left3 a{
+        font: icon;
+        font-size: 10px;
+        color: black;
+    }
+    
+    .right3{
+        display: flex;
+        align-items: center;
+        margin-right: 2%;
+        gap: 10px;
+        cursor: pointer;
+    }
+    
+    
+    .right3 p{
+        font: icon;
+        color: black;
+        font-size: 10px;
+    }
+    
+    .right3Img{
+        display: flex;
+    }
+    
+    .banner{
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        gap: 24px;
+        justify-content: space-between;
+    }
+    
+    .banner1{
+        margin-left: 2%;
+        display: flex;
+        justify-content: left;
+    }
+    
+    .banner1 img , .banner2 img{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .banner2{
+        margin-right: 2%;
+        display: flex;
+        justify-content: right;
+    }
+    
+    
+    .slider{
+        width: 100%;
+        height: 50px;
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .wertilebi{
+        width: 50%;
+        display: flex;
+        gap: 1%;
+        align-items: center;
+        margin-left: 3%;
+    }
+    
+    .dot1{
+        width: 25px;
+        height: 10px;
+        border: 1px;
+        border-radius: 100px;
+        background:#52057B;
+    }
+    
+    .dot{
+        width: 10px;
+        height: 10px;
+        border: 1px;
+        border-radius: 100px;
+        background: #828282;
+    
+    }
+    
+    .Gadartva{
+        width: 50%;
+        display: flex;
+        justify-content: flex-end;
+        gap: 5%;
+        margin-right: 3%;
+    }
+    
+    .back{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    
+    }
+    
+    .BackImg{
+        display: flex;
+    }
+    
+    .back p{
+        font: icon;
+    }
+    
+    .Next{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .Next p{
+        color: #52057b;
+        font: icon;
+    }
+    
+    .NextImg{
+        display: flex;
+    }
+    
+    .container2{
+        width: 756px;
+        height: 100%;
+        margin-top: 25px;
+    }
+    
+    .container3{
+        width: 756px;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        gap: 24px;
+        margin-top: 25px;
+    }
+    
+    .BillImg{
+        margin-left: 2%;
+        width: 169px;
+        height: 231px;
+    }
+    
+    .BillImg img{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .Sigup{
+        border: 5px solid;
+        margin-right: 2%;
+        height: 100%;
+        border-radius: 10px;
+        border-color: #ccc;
+        width: 532px;
+    }
+    
+    .TopLine{
+        width: 100%;
+        border-bottom: solid;
+        border-color: #ccc;
+    }
+    
+    .TopFirst{
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 20px 10px 20px;
+        align-items: center;
+    }
+    
+    .First{
+        font: icon;
+        font-size: 15px;
+    }
+    
+    .TopSecond{
+        display: flex;
+        gap: 10px;
+        padding: 0px 20px 10px 20px;
+        align-items: center;
+        font: icon;
+        font-size: 9px;
+    }
+    
+    .balance{
+        color: #52057B;
+        font: icon;
+        font-size: 9px;
+    }
+    
+    .Second button{
+        font: icon;
+        height: 25px;
+        width: 75px;
+        border-radius: 8px;
+        border: 1px solid rgba(226, 226, 226, 1);
+        font-size: 12px;
+    }
+    
+    .CenterLine{
+        width: 100%;
+    }
+    
+    .Topline2{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 15px;
+        align-items: center;
+    }
+    
+    .Code{
+        padding-left: 20px;
+        font: icon;
+        font-size: 15px;
+    }
+    
+    .Payment{
+        padding-right: 20px;
+        font: icon;
+        font-size: 15px;
+    }
+    
+    .SecondLine{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 15px;
+        align-items: center;
+    }
+    
+    .FirstInput{
+        width: fit-content;
+        padding-left: 20px;
+    }
+    
+    .FirstInput input[type="text"]{
+        width: 170px;
+        padding: 10px;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+        font-size: 12px;
+    }
+    
+    .SecondInput{
+        width: fit-content;
+        padding-right: 20px;
+    }
+    
+    .SecondInput input[type="text"]{
+        width: 170px;
+        padding: 10px;
+        font-size: 12px;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+    }
+    
+    .BottomLine button{
+        margin-left: 20px;
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        background: #52057B;
+        color: white;
+        gap: 15px;
+        font: icon;
+        border-radius: 8px;
+        font-size: 12px;
+        text-align: center;
+    }
+    
+    .BottomLine{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    
+    .help{
+        margin-right: 20px;
+        display: flex;
+        gap: 15px;
+        align-items: center;
+    }
+    
+    .help img{
+        width: 15px;
+        height: 15px;
+    }
+    
+    .help p{
+        font: icon;
+        font-size: 12px;
+    }
+    
+    .category{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 45px;
+        flex-wrap: wrap;
+    }
+      
+    .flexbox{
+        width: 80px;
+        height: 138px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 15px;
+        align-items: center;
+    }
+      
+    .Top{
+        display: flex;
+        align-items: center;
+    }
+      
+    .botom{
+        text-align: center;
+        font: icon;
+        font-size: 15px;
+        height: 80px;
+        display: flex;
+        align-items: center;
+    }
+    
+    
+    .category{
+        width: 756px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 35px;
+        margin-top: 25px;
+        justify-content: space-around;
+    }
+      
+    .flexbox{
+        width: 65px;
+        height: 138px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        align-items: center;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+      
+    .Top img{
+        width: 65px;
+        height: 65px;
+    }
+    
+    .Top{
+        display: flex;
+        align-items: center;
+    }
+      
+    .botom{
+        text-align: center;
+        font: icon;
+        font-size: 15px;
+        height: 80px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .container4{
+        display: flex;
+        flex-direction: column;
+        margin-top: 45px;
+    }
+    
+    .TextCon{
+        font: icon;
+        display: flex;
+        justify-content: flex-start;
+        margin-left: 4%;
+        font-size: 20px;
+    }
+    
+    .flexbox1 {
+        width: 80px;
+        height: 138px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        align-items: center;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    
+    .flexbox2 {
+        width: 80px;
+        height: 138px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 15px;
+        align-items: center;
+        padding-right: 2%;
+        padding-left: 2%;
+    }
+    
+    
+    .FlashSale{
+        width: 756px;
+        height: 100%;
+        background-color: #F9F9F9;
+        margin-top: 35px;
+    }
+    
+    .title{
+        display: flex;
+        justify-content: space-between;
+        padding-left: 2%;
+        padding-top: 25px;
+        align-items: center;
+    }
+    
+    .title h2{
+        font: icon;
+        font-size: 25px;
+    }
+    
+    .time{
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        padding-right: 2%;
+    }
+    
+    .time p {
+        font: icon;
+        font-size: 18px;
+    }
+    
+    .timends{
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+    
+    .time1{
+        border-style: solid;
+        height: fit-content;
+        padding: 2px;
+        color: white;
+        border-color: #52057B;
+        background: #52057B;
+        border-radius: 5px;
+    }
+    
+    .cards{
+        margin-left: 2%;
+        margin-top: 35px;
+        margin-right: 2%;
+        margin-bottom: 2%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    
+    .card{
+        border: solid;
+        width: fit-content;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        padding: 0px 0px 16px 0px;
+        border-color: #ccc;
+    }
+    
+    .ImgCard{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .tite{
+        display: flex;
+        flex-direction: column;
+        padding-left: 15px;
+        font: icon;
+        padding-top: 10px;
+        gap: 10px;
+    }
+    
+    .p{
+        font-size: 12px;
+        color: #ccc;
+    }
+    
+    .status{
+        width: 100%;
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .price{
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        align-items: center;
+    }
+    
+    .Dolar{
+        color: #828282;
+        margin-left: 15px;
+        font: icon;
+        display: flex;
+        gap: 5px;
+    }
+    
+    .line{
+        border: solid;
+        position: absolute;
+        top: 14px;
+        left: 15px;
+        width: 45px;
+        border-bottom: 0px;
+        border-color: #828282;
+        font: icon;
+    }
+    
+    .p2{
+        margin-right: 15px;
+        border: solid;
+        padding: 4px;
+        border-radius: 5px;
+        background: #FF00001A;
+        border-color: #ff00001A;
+    }
+    
+    .p2 p{
+        font: icon;
+        color: #FF0000;
+    }
+    
+    .Status{
+        width: 100%;
+        display: flex;
+        justify-content: space-between; 
+    }
+    
+    .loadbar{
+        width: 120px;
+        border: solid;
+        margin-left: 10px;
+        border-radius: 7px;
+        border-color: #F3F3F3;
+    }
+    
+    .orangebar{
+        width: 50%;
+        background: orange;
+        height: 100%;
+        border: 1px;
+        border-radius: 5px;
+        margin: 0;
+    }
+    
+    .sold{
+        padding-right: 15px;
+        font: icon;
+        font-size: 12px;
+        color: #828282;
+    }
+    
+    
+    .Orange1Line{
+        border-left: solid;
+        border-color:#E73827;
+        width: 4px;
+        height: 46px;
+    }
+    
+    .orangebar1{
+        width: 85%;
+        background: orange;
+        height: 100%;
+        border: 1px;
+        border-radius: 5px;
+        margin: 0;
+    }
+    
+    .orangebar2{
+        width: 25%;
+        background: orange;
+        height: 100%;
+        border: 1px;
+        border-radius: 5px;
+        margin: 0;
+    }
+    
+    .orangebar3{
+        width: 90%;
+        background: orange;
+        height: 100%;
+        border: 1px;
+        border-radius: 5px;
+        margin: 0;
+    }
+    
+    .orangebar4{
+        width: 60%;
+        background: orange;
+        height: 100%;
+        border: 1px;
+        border-radius: 5px;
+        margin: 0;
+    }
+    
+    .NewFeatures{
+        width: 756px;
+        margin-top: 60px;
+        height: fit-content;
+    }
+    
+    .top{
+        height: 100%;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    
+    .text10{
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-left: 4%;
+    }
+    
+    .text10 p{
+        font: icon;
+        font-weight: 600;
+        font-size: 25px;
+    }
+    
+    .btn{
+        border: solid;
+        border-radius: 8px;
+        padding: 5px;
+        display: flex;
+        align-items: center;
+        color: #52057B;
+        border-color: #52057B1A;
+        background: #52057B1A;
+        font: icon;
+    }
+    
+    .cads{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        gap: 25px;
+        margin-top: 25px;
+        flex-wrap: wrap;
+        margin-bottom: 35px;
+    }
+    
+    .toptex{
+        display: flex;
+        gap: 25px;
+        align-items: center;
+    }  
+    
+    .toptex p{
+        color: white;
+        font: icon; 
+    }
+    
+    .cad-1{
+        width: 263px;
+        height: 111px;
+        padding: 16px 24px 16px 24px;
+        border-radius: 10px;
+        background: linear-gradient(90deg, #BF5AE0 0%, #A811DA 100%);
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .lastline{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .Product{
+        font: icon;
+        color: white;
+    }
+    
+    .stock{
+        font: icon;
+        color: white;
+    }
+    
+    .cad-2{
+        width: 263px;
+        height: 111px;
+        padding: 16px 24px 16px 24px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        background: linear-gradient(90deg, #06BEB6 0%, #48B1BF 100%);
+    }
+    
+    .cad-3{
+        width: 263px;
+        height: 111px;
+        padding: 16px 24px 16px 24px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        background: linear-gradient(90deg, #F85032 0%, #E73827 100%);
+    }
+    
+    .cad-4{
+        width: 263px;
+        height: 111px;
+        padding: 16px 24px 16px 24px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        background: linear-gradient(90deg, #FE8C00 0%, #F83600 100%);
+    }
+    
+    .cad-5{
+        width: 263px;
+        height: 111px;
+        padding: 16px 24px 16px 24px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        background: linear-gradient(90deg, #F857A6 0%, #FF5858 100%);
+    }
+    
+    .BottomCard{
+        padding-left: 2%;
+        padding-right: 2%;
+        margin-top: 35px;
+        display: flex;
+        justify-content: space-evenly;
+        gap: 25px;
+        flex-wrap: wrap;
+    }
+    
+    .btCard-1{
+        width: 329px;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        border-radius: 15px;
+        border: 1px solid;
+        border-color: #E2E2E2;
+        padding: 24px;
+    }
+    
+    .btTopline{
+        display: flex;
+        justify-content: space-between;
+        width: 281px;
+        height: 46px;
+        gap: 11px;
+        font: icon;
+        align-items: center;
+    }
+    
+    .blueLine{
+        border-left: solid;
+        border-color: #0052D4;
+        width: 4px;
+        height: 46px;
+    }
+    
+    .btImage{
+        display: flex;
+        justify-content: space-between;
+        gap: 8px;
+    }
+    .btImage img{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .distance{
+        border: solid;
+        border-top: 0px;
+        border-left: 0px;
+        border-radius: 0px;
+        margin-left: 2%;
+        margin-right: 2%;
+        border-color: #E2E2E2;
+    }
+    
+    .btCard-2{
+        width: 329px;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        border-radius: 15px;
+        border: 1px solid;
+        border-color: #E2E2E2;
+        padding: 24px;
+    }
+    
+    .PinkLine{
+        border-left: solid;
+        border-color:#EC008C;
+        width: 4px;
+        height: 46px;
+    }
+    
+    .btCard-3{
+        width: 329px;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        border-radius: 15px;
+        border: 1px solid;
+        border-color: #E2E2E2;
+        padding: 24px;
+    }
+    
+    .PurpleLine{
+        border-left: solid;
+        border-color:#892CDC;
+        width: 4px;
+        height: 46px;
+    }
+    
+    .btCard-4{
+        width: 329px;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        border-radius: 15px;
+        border: 1px solid;
+        border-color: #E2E2E2;
+        padding: 24px;
+    }
+    
+    .cadt-1{
+        width: 259px;
+        height: 367px;
+        border-radius: 8px;
+        border: solid;
+        border-color: #E2E2E2;
+        padding-bottom: 5px;
+    }
+    
+    .contentcad-1{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    
+    
+    .titlecad-1{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 10px;
+    }
+    
+    .label p{
+        margin: 0;
+    }
+    
+    .titlecad-1 p{
+        margin: 0;
+    }
+    
+    .Img2cad-1{
+        display: flex;
+    }
+    
+    .BottomStatus{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .pricecad-1{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .pricecad-1 p{
+        margin: 0;
+    }
+    
+    .ratingcad-1{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .ratingcad-1 p{
+        margin: 0;
+    }
+    
+    .informationcad-1{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .Img3cad-1{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .Img3cad-1 p{
+        margin: 0;
+    }
+    
+    .informationcad-1 p{    
+        margin: 0;
+    }
+    
+    .label{
+        border: solid;
+        width: fit-content;
+        border-radius: 4px;
+        padding: 2px;
+        border-color: #52057B1A;
+        background: #52057B1A;
+        color: #52057B;
+        font: icon;
+        font-size: 14px;
+    }
+    
+    .titlecad-1 p{
+        font: icon;
+        font-size: 14px;
+    }
+    
+    .pricecad-1 p{
+        font: icon;
+        font-size: 18px;
+        font-weight: 600;
+    }
+    
+    .ratingcad-1 p{
+        font: icon;
+        font-size: 18px;
+    }
+    
+    .informationcad-1 p{
+        font: icon;
+        color: #828282;
+        font-size: 14px;
+    }
+    
+    .cardTop{
+        display: flex;
+        justify-content: space-evenly;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+    
+    .Product10{
+        padding-left: 2%;
+        padding-right: 2%;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        margin-top: 40px;
+        width: 756px;
+    }
+    
+    .TopTitleLIne{
+        font: icon;
+        font-size: 30px;
+        font-weight: 600;
+    }
+    
+    .cardsBottom{
+        display: flex;
+        justify-content: space-evenly;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+    
+    .contentcad-1-2{
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    
+    .fullcards{
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 756px;
+    }
+    
+    .banner10{
+        width: 100%;
+        height: 100%;
+    
+    }
+    
+    .banner10  img{
+        width: 100%;
+        height: 100%;
+    }
+    
+    
+    .BstCard-1{
+        width: 259px;
+        height: 330px;
+        border-radius: 8px;
+        border: 1px solid;
+        border-color: #E2E2E2;
+    }
+    
+    .Img1BstCard-1{
+        width: 100%;
+        height: 201px;
+    }
+    
+    .Img1bst{
+        position: relative;
+    }
+    
+    .Img2bst{
+        position: absolute;
+        top: 130px;
+        left: 90px;
+    }
+    
+    .NameShop{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+    
+    .NameShop p{
+        margin: 0;
+        font: icon;
+        font-weight: 600;
+        font-size: 16px;
+    }
+    
+    .Verification{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        font: icon;
+        color: #4364F7;
+        font-size: 14px;
+    }
+    
+    .Verification p{
+        margin: 0;
+    }
+    
+    .ImgVer{
+        display: flex;
+    }
+    
+    .contentFlex{
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .bottomfirsthaf{
+        text-align: center;
+        font: icon;
+        font-size: 14px;
+        font-weight: 600;
+    }
+    
+    .topfirsthaf{
+        font: icon;
+        color: #828282;
+    }
+    
+    .BestShopText{
+        font: icon;
+        font-size: 26px;
+        font-weight: 600;
+    }
+    
+    .bestCards{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        gap: 25px;
+    }
+    
+    .BestShop{
+        margin-top: 55px;
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+        margin-left: 2%;
+        margin-right: 2%;
+        width: 756px;
+    }
+    
+    .ShopBest{
+        display: flex;
+        flex-direction: column;
+        gap: 45px;
+    }
+    
+    .MaincontentBstCard-1{
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+    }
+    
+    .FinalContent{
+        margin-left: 2%;
+        margin-right: 2%;
+        margin-top: 50px;
+        width: 756px;
+    }
+    
+    .Vector9{
+        border: 1px solid;
+        border-color: #E2E2E2;
+    }
+    
+    .FinalText{
+        padding-top: 35px;
+        padding-bottom: 35px;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+    
+    .FText{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .FText h2{
+        font: icon;
+        font-size: 26px;
+        font-weight: 600;
+    }
+    
+    .FText p{
+        font: icon;
+        font-size: 14px;
+        font-weight: 400;
+        color: #828282;
+    }
+    
+    .FinalBtn{
+        border: solid;
+        display: flex;
+        width: 128px;
+        height: 42px;
+        border-radius: 8px;
+        border-color: #52057B;
+        background: #52057B;
+        color: white;
+        font: icon;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .Brands{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        margin-top: 35px;
+        margin-bottom: 35px;
+    }
+    
+    .Brands h2{
+        font: icon;
+        font-size: 26px;
+        font-weight: 600;
+    }
+    
+    .FinalContentText{
+        display: flex;
+        justify-content: space-between;
+        gap: 25px;
+    }
+    
+    .FinalCard-1 , .FinalCard-2 , .FinalCard-3 , .FinalCard-4 , .FinalCard-5 , .FinalCard-6 , .FinalCard-7 , .FinalCard-8{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: fit-content;
+    }
+    
+    .FinalCard-1 h2  , .FinalCard-2 h2, .FinalCard-3 h2, .FinalCard-4 h2 , .FinalCard-5 h2, .FinalCard-6 h2, .FinalCard-7 h2 , .FinalCard-8 h2{
+        font: icon;
+        font-size: 15px;
+        font-weight: 500;
+    }
+    
+    .FashionText{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .FashionText p{
+        font: icon;
+        font-size: 12px;
+        font-weight: 500;
+        color: #828282;
+    }
+    
+    .Peyment{
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+        margin-top: 35px;
+        margin-bottom: 35px;
+    }
+    
+    .Peyment h2{
+        font: icon;
+        font-size: 25px;
+        font-weight: 600;
+    }
+    
+    .Finalimgaes{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 55px;
+    }
+    
+    .SlabsShopFinal{
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        margin-top: 35px;
+        margin-bottom: 35px;
+    }
+    
+    .SlabShopText{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .SlabShopText h2{
+        font: icon;
+        font-size: 25px;
+        font-weight: 600;
+    }
+    
+    .SlabShopText p{
+        font: icon;
+    }
+    
+    .SlabShopText-2{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .SlabShopText-2 h2{
+        font: icon;
+        font-size: 25px;
+        font-weight: 600;
+    }
+    
+    .SlabShopText-2 p{
+        font: icon;
+    }
+    
+    .BoldText{
+        font: icon;
+        font-size: 17px;
+        font-weight: 1000;
+        cursor: pointer;
+    }
+    
+    .lastText{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 25px;
+        margin-bottom: 35px;
+    }
+    
+    .LastLeft{
+        font: icon;
+    }
+    
+    .LastRight{
+        display: flex;
+        gap: 20px;
+        cursor: pointer;
+        font: icon;
+    }
+}
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+    <div class="Navbar">
+
+        <div class="left">
+            <li><a href="https://mailrelay.com/en/glossary/sponsorship/">Open Sponsorshop</a></li>
+            <li><a href="#">Call Center</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Tutorial</a></li>
+        </div>
+        <div class="right">
+            <li><a href="#">Be Partners</a></li>
+            <li><a href="#">Open Shop</a></li>
+            <li><a href="#">Download</a></li>
+            <div class="Img1">
+                <img src="Vector (10).png">
+            </div>
+            <li><a href="#">English</a></li>
+            <div class="Img2">
+                <img src="Vector (10).png">
+            </div>
+        </div>
+
+    </div>
+
+    <div class="Navbar2">
+        <div class="left2">
+              <div class="slab">
+                <img src="Circle (2).png" alt="">
+                <h2>SlabShop</h2>
+              </div>
+              <div class="location">
+                <div class="locaImg">
+                <img src="Vector (12).png" alt="">
+                </div>
+                <div class="location2">
+                <p>Indonesia, Yogyakarta</p>
+                <div class="locaImg2">
+                <img src="Vector (13).png" alt="">
+                </div>
+                </div>
+                </div>
+                <div class="center">
+                    <div class="search">
+                        <input type="text" placeholder="Search In SlabShop" >
+                        <div class="searchImg">
+                            <img src="Frame (11).png">
+                        </div>
+                    </div>
+                    <button>Category  <img src="Vector (10).png" alt=""></button>
+                </div>    
+                <div class="right2">
+                    <div class="Icons">
+                        <img src="Frame (8).png" alt="">
+                        <img src="Frame (9).png" alt="">
+                        <img src="Frame (10).png" alt="">
+                    </div>
+            
+                    <div class="profile">
+                        <div class="Img3">
+                            <img src="Ellipse 2 (1).png" alt="">
+                        </div>
+                        <div class="text">
+                        <div class="tex1">
+                            <p>Pikachu</p>
+                        </div>
+                        <div class="tex2">
+                            <p>Online</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </div>
+
+    </div>
+
+    <div class="Navbar3">
+        <div class="left3">
+          <li><a>Popular Search</a></li>
+          <li><a>:</a></li>
+          <li><a>Fashion</a></li>
+          <li><a>Shoes Man</a></li>
+          <li><a>Gadget</a></li>
+          <li><a>Computer</a></li>
+          <li><a>Laptop</a></li>
+          <li><a>Flash Sale</a></li>
+          <li><a>Accessories</a></li>
+        </div>
+        <div class="right3">
+          <p>Hide</p>
+          <div class="right3Img">
+            <img src="Vector (13).png" alt="">
+        </div>
+        </div>
+    </div>
+
+    </div>
+     
+    <div class="container2">
+      <div class="banner">
+          <div class="banner1">
+              <img src="Image (1).png" alt="">
+          </div>
+
+          <div class="banner2">
+            <img src="Image (2).png" alt="">
+        </div>
+      </div>
+
+      <div class="slider">
+
+        <div class="wertilebi">
+             <div class="dot1"></div>
+             <div class="dot"></div>
+             <div class="dot"></div>
+             <div class="dot"></div>
+        </div>
+
+        <div class="Gadartva">
+            <div class="back">
+                <div class="BackImg">
+                    <img src="Frame (13).png" alt="">
+                </div>
+                <p>Back</p>
+            </div>
+
+            <div class="Next">
+                <p>Next</p>
+                <div class="NextImg">
+                    <img src="Vector (14).png" alt="">
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container3">
+
+        <div class="BillImg">
+            <img src="Image (3).png" alt="">
+        </div>
+
+        <div class="Sigup">
+
+            <div class="TopLine">
+
+                <div class="TopFirst">
+
+                    <div class="First">
+                        <p>Bills and Utility</p>
+                    </div>
+
+                    <div class="Second">
+                        <button>See All <img src="Vector (16).png" alt=""></button>
+                    </div>
+
+                </div>
+
+                <div class="TopSecond">
+                    <div class="balance">Balance</div>
+                    <p>Top Up</p>
+                    <p>Internet</p>
+                    <p> Electricity Tokens</p>
+                    <p>Tickets</p>
+                    <p>Data Package</p>
+                    <p>Pulse</p>
+                    <p>Voucher</p>
+                </div>
+
+            </div>
+
+            <div class="CenterLine">
+
+                <div class="Topline2">
+                    
+                     <div class="Code">
+                        Code Transaction
+                     </div>
+
+                     <div class="Payment">
+                        Payment Amount
+                     </div>
+
+                </div>
+                
+                <div class="SecondLine">
+
+                    <div class="FirstInput">
+                        <input type="text" placeholder="Ex: 276NHVF387XN3487">
+                    </div>
+
+                    <div class="SecondInput">
+                        <input type="text" placeholder="Ex: $100.000">
+                    </div>
+                </div>
+            </div>
+
+            <div class="BottomLine">
+                <button>Purchase <img src="Vector (15).png" alt=""></button>
+                <div class="help">
+                    <img src="Frame (14).png" alt="">
+                    <p>Help!</p>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+    <div class="container4">
+
+    <div class="TextCon">
+        Choice Category
+    </div>
+
+    <div class="category">
+
+        <div class="flexbox1">
+          <div class="Top"><img src="Frame 24 (1).png"></div>
+          <div class="botom">Man Fashion</div>
+        </div>
+      
+        <div class="flexbox">
+          <div class="Top"><img src="Frame 24 (2).png"></div>
+          <div class="botom">Gadget Electronic</div>
+        </div>
+      
+        <div class="flexbox">
+          <div class="Top"><img src="Frame 24 (3).png"></div>
+          <div class="botom">Voucher Game</div>
+        </div>
+      
+        <div class="flexbox">
+          <div class="Top"><img src="Frame 24 (4).png"></div>
+          <div class="botom">Property</div>
+        </div>
+      
+        <div class="flexbox">
+          <div class="Top"><img src="Frame 24 (5).png"></div>
+          <div class="botom">Kids Fashion</div>
+        </div>
+      
+        <div class="flexbox">
+          <div class="Top"><img src="Frame 24 (6).png"></div>
+          <div class="botom">Computer & Laptop</div>
+        </div>
+      
+        <div class="flexbox">
+          <div class="Top"><img src="Frame 24 (7).png"></div>
+          <div class="botom">Woman Fashion</div>
+        </div>
+      
+        <div class="flexbox">
+          <div class="Top"><img src="Frame 24 (8).png"></div>
+          <div class="botom">Sports</div>
+        </div>
+      
+        <div class="flexbox">
+          <div class="Top"><img src="Frame 24 (9).png"></div>
+          <div class="botom">Gaming</div>
+        </div>
+      
+        <div class="flexbox">
+          <div class="Top"><img src="Frame 24 (10).png"></div>
+          <div class="botom">Film & Music</div>
+        </div>
+      
+        <div class="flexbox2">
+          <div class="Top"><img src="Frame 24 (11).png"></div>
+          <div class="botom">View All</div>
+        </div>
+      
+    </div>
+      
+    </div>
+
+    <div class="FlashSale">
+
+    <div class="title">
+        <h2>November Super Flash Sale ⚡</h2>
+
+        <div class="time">
+            <p>Ends in</p>
+
+            <div class="timends">
+
+              <div class="time1">
+                04
+              </div>
+              <p>:</p>
+              <div class="time1">
+                24
+              </div>
+              <p>:</p>
+              <div class="time1">
+                49
+              </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="cards">
+
+         <div class="card">
+
+              <div class="ImgCard">
+                <img src="Image (5).png" alt="">
+              </div>
+
+              <div class="conten">
+
+                    <div class="tite">
+
+                        <div class="p">Property</div>
+
+                        <div class="T">
+                        <p>Durable tupperware</p>
+                        <p>bottles (Black Version)</p>
+                        </div>
+
+                    </div>
+
+                <div class="status">
+
+                <div class="price">
+                              
+                         <span class="Dolar">$20.00
+                                
+                            <div class="p3">
+                                <p>$10.00</p>
+                            </div>
+
+                        </span>
+
+         
+                        <span class="line"></span>
+                            
+                        <div class="p2">
+                                
+                             <p>- 50%</p>
+                            
+                        </div>
+
+                    </div>
+
+                    <div class="Status">
+
+                        <div class="loadbar">
+    
+                            <div class="orangebar"></div>
+                            
+                        </div>
+
+                        <div class="sold">120 Sold</div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+         </div>
+
+         <div class="card">
+
+            <div class="ImgCard">
+              <img src="Image (6).png" alt="">
+            </div>
+
+            <div class="conten">
+
+                  <div class="tite">
+
+                      <div class="p">Electronic</div>
+
+                      <div class="T">
+                      <p>Youth The Child Bluetooth</p>
+                      <p>Headphones</p>
+                      </div>
+
+                  </div>
+
+              <div class="status">
+
+              <div class="price">
+                            
+                       <span class="Dolar">$35.00
+                              
+                          <div class="p3">
+                              <p>$15.00</p>
+                          </div>
+
+                      </span>
+
+       
+                      <span class="line"></span>
+                          
+                      <div class="p2">
+                              
+                           <p>- 45%</p>
+                          
+                      </div>
+
+                  </div>
+
+                  <div class="Status">
+
+                      <div class="loadbar">
+  
+                          <div class="orangebar1"></div>
+                          
+                      </div>
+
+                      <div class="sold">320 Sold</div>
+
+                  </div>
+
+              </div>
+
+          </div>
+
+         </div>
+
+        <div class="card">
+
+        <div class="ImgCard">
+          <img src="Image (7).png" alt="">
+        </div>
+
+        <div class="conten">
+
+              <div class="tite">
+
+                  <div class="p">Property</div>
+
+                  <div class="T">
+                  <p>CTRL brand tupperware </p>
+                  <p>bottles</p>
+                  </div>
+
+              </div>
+
+          <div class="status">
+
+          <div class="price">
+                        
+                   <span class="Dolar">$86.40
+                          
+                      <div class="p3">
+                          <p>$42.75</p>
+                      </div>
+
+                  </span>
+
+   
+                  <span class="line"></span>
+                      
+                  <div class="p2">
+                          
+                       <p>- 58%</p>
+                      
+                  </div>
+
+              </div>
+
+              <div class="Status">
+
+                  <div class="loadbar">
+
+                      <div class="orangebar2"></div>
+                      
+                  </div>
+
+                  <div class="sold">90 Sold</div>
+
+              </div>
+
+          </div>
+
+      </div>
+
+         </div>
+
+        <div class="card">
+
+    <div class="ImgCard">
+      <img src="Image (8).png" alt="">
+    </div>
+
+    <div class="conten">
+
+          <div class="tite">
+
+              <div class="p">Automotive</div>
+
+              <div class="T">
+              <p>Miniature hotwheels black </p>
+              <p>sports</p>
+              </div>
+
+          </div>
+
+      <div class="status">
+
+      <div class="price">
+                    
+               <span class="Dolar">$52.25
+                      
+                  <div class="p3">
+                      <p>$26.67</p>
+                  </div>
+
+              </span>
+
+
+              <span class="line"></span>
+                  
+              <div class="p2">
+                      
+                   <p>- 60%</p>
+                  
+              </div>
+
+          </div>
+
+          <div class="Status">
+
+              <div class="loadbar">
+
+                  <div class="orangebar3"></div>
+                  
+              </div>
+
+              <div class="sold">180 Sold</div>
+
+          </div>
+
+      </div>
+
+  </div>
+
+         </div>
+
+         <div class="card">
+
+    <div class="ImgCard">
+      <img src="Image (9).png" alt="">
+    </div>
+
+    <div class="conten">
+
+          <div class="tite">
+
+              <div class="p">Electronic</div>
+
+              <div class="T">
+              <p>Headphone Super Bass </p>
+              <p>Stereo High Quality</p>
+              </div>
+
+          </div>
+
+      <div class="status">
+
+      <div class="price">
+                    
+               <span class="Dolar">$40.99
+                      
+                  <div class="p3">
+                      <p>$40.02</p>
+                  </div>
+
+              </span>
+
+
+              <span class="line"></span>
+                  
+              <div class="p2">
+                      
+                   <p>- 20%</p>
+                  
+              </div>
+
+          </div>
+
+          <div class="Status">
+
+              <div class="loadbar">
+
+                  <div class="orangebar4"></div>
+                  
+              </div>
+
+              <div class="sold">130 Sold</div>
+
+          </div>
+
+      </div>
+
+  </div>
+
+         </div>
+
+        
+    </div>
+
+    </div>
+
+    <div class="NewFeatures">
+    <div class="top">
+        <div class="text10">
+            <p>Now Easier to Choose</p>
+            <div class="btn">New Features</div>
+        </div>
+        <div class="cads">
+            <div class="cad-1">
+                 <div class="toptex">
+                    <div class="Photo">
+                        <img src="Icon.png" alt="">
+                    </div>
+                    <p>Popular Product</p>
+                 </div>
+                 <div class="lastline">
+                    <div class="Product">
+                         Product
+                    </div>
+                    
+                    <div class="stock">
+                         341 Stock
+                    </div>
+                </div>
+            </div>
+
+            <div class="cad-2">
+                <div class="toptex">
+                    <div class="Photo">
+                        <img src="Icon (1).png" alt="">
+                    </div>
+                    <p>Most Wanted</p>
+                 </div>
+                 <div class="lastline">
+                    <div class="Product">
+                         Product
+                    </div>
+                    
+                    <div class="stock">
+                         162 Stock
+                    </div>
+                </div>
+            </div>
+            <div class="cad-3">
+                <div class="toptex">
+                    <div class="Photo">
+                        <img src="Icon (2).png" alt="">
+                    </div>
+                    <p>Top Fashion 2022</p>
+                 </div>
+                 <div class="lastline">
+                    <div class="Product">
+                         Product
+                    </div>
+                    
+                    <div class="stock">
+                         228 Stock
+                    </div>
+                </div>
+            </div>
+            <div class="cad-4">
+                <div class="toptex">
+                    <div class="Photo">
+                        <img src="Icon (3).png" alt="">
+                    </div>
+                    <p>Bestseller</p>
+                 </div>
+                 <div class="lastline">
+                    <div class="Product">
+                         Product
+                    </div>
+                    
+                    <div class="stock">
+                         422 Stock
+                    </div>
+                </div>
+            </div>
+            <div class="cad-5">
+                <div class="toptex">
+                    <div class="Photo">
+                        <img src="Icon (4).png" alt="">
+                    </div>
+                    <p>Best Shop 2022</p>
+                 </div>
+                 <div class="lastline">
+                    <div class="Product">
+                         Product
+                    </div>
+                    
+                    <div class="stock">
+                         52 Stock
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="distance"></div>
+
+    <div class="BottomCard">
+            
+           <div class="btCard-1">
+
+                <div class="btTopline">
+
+                    <div class="blueLine"></div>
+
+                    <p>The goods are ready stock and ready to be shipped</p>
+
+                </div>
+
+                <div class="btImage">
+                    <img src="Image (13).png" alt="">
+                    <img src="Image (14).png" alt="">
+                </div>
+           </div>
+
+           <div class="btCard-2">
+
+            <div class="btTopline">
+
+            <div class="PinkLine"></div>
+
+            <p>New items for those of you who want to pre order</p>
+
+            </div>
+
+            <div class="btImage">
+            <img src="Image (14).png" alt="">
+            <img src="Image (15).png" alt="">
+            </div>
+                
+           </div>
+
+
+           <div class="btCard-3">
+            
+            <div class="btTopline">
+
+                <div class="PurpleLine"></div>
+    
+                <p>The top second hand items available here</p>
+    
+                </div>
+    
+                <div class="btImage">
+                <img src="Image (17).png" alt="">
+                <img src="Image (18).png" alt="">
+                </div>
+                    
+               </div>
+
+               <div class="btCard-4">
+
+                <div class="btTopline">
+    
+                    <div class="Orange1Line"></div>
+        
+                    <p>You can get all free shipping products here</p>
+        
+                    </div>
+        
+                    <div class="btImage">
+                    <img src="Image (19).png" alt="">
+                    <img src="Image (20).png" alt="">
+                    </div>
+                        
+                   </div>
+
+           </div>
+
+    </div>
+
+    <div class="Product10">
+
+         <div class="TopTitleLIne">
+          <p>Today Is Only For You</p>
+         </div>
+
+         <div class="cardTop">
+              
+            <div class="cadt-1">
+                  <div class="Imgcad-1"><img src="Image (21).png"></div>
+
+                  <div class="contentcad-1">
+
+                        <div class="titlecad-1">
+                             <div class="label"><p>Computer & Laptop</p></div>
+                             <p>Neve Strix Pro L123 (2021) - TP399K 1TB</p>
+                        </div>
+
+                        <div class="BottomStatus">
+
+                        <div class="statuscad-1">
+                              <div class="pricecad-1"> 
+
+                                 <p>$415.10</p>
+                                 <div class="ratingcad-1">
+                                     <div class="Img2cad-1"><img src="Frame (18).png"></div>
+                                     <p>4.7</p>
+                                 </div>
+
+                              </div>
+                        </div>
+
+                        <div class="informationcad-1">
+                             <div class="Img3cad-1">
+                                 <img src="Frame (19).png">
+                                 <p>Kota Bandung</p>
+                             </div>
+                             <p>390 Sold</p>
+                        </div>
+
+                        </div>
+
+                  </div>
+            </div>
+
+            <div class="cadt-1">
+                <div class="Imgcad-1"><img src="Image (22).png"></div>
+
+                <div class="contentcad-1">
+
+                      <div class="titlecad-1">
+                           <div class="label"><p>Computer & Laptop</p></div>
+                           <p>Dark King M346 Mechanical Keyboard - Free 31 Keys</p>
+                      </div>
+
+                      <div class="BottomStatus">
+
+                      <div class="statuscad-1">
+                            <div class="pricecad-1"> 
+
+                               <p>$12.54</p>
+                               <div class="ratingcad-1">
+                                   <div class="Img2cad-1"><img src="Frame (18).png"></div>
+                                   <p>4.8</p>
+                               </div>
+
+                            </div>
+                      </div>
+
+                      <div class="informationcad-1">
+                           <div class="Img3cad-1">
+                               <img src="Frame (19).png">
+                               <p>Kota Jakarta</p>
+                           </div>
+                           <p>500 Sold</p>
+                      </div>
+
+                      </div>
+
+                </div>
+          
+            </div>
+
+            <div class="cadt-1">
+                <div class="Imgcad-1"><img src="Image (23).png"></div>
+
+                <div class="contentcad-1">
+
+                      <div class="titlecad-1">
+                           <div class="label"><p>Fashion Man</p></div>
+                           <p>Reader Touring Coboy Brc Black Leather Boots</p>
+                      </div>
+
+                      <div class="BottomStatus">
+
+                      <div class="statuscad-1">
+                            <div class="pricecad-1"> 
+
+                               <p>$23.24</p>
+                               <div class="ratingcad-1">
+                                   <div class="Img2cad-1"><img src="Frame (18).png"></div>
+                                   <p>4.9</p>
+                               </div>
+
+                            </div>
+                      </div>
+
+                      <div class="informationcad-1">
+                           <div class="Img3cad-1">
+                               <img src="Frame (19).png">
+                               <p>Kota Surabaya</p>
+                           </div>
+                           <p>450 Sold</p>
+                      </div>
+
+                      </div>
+
+                </div>
+            </div>
+
+            <div class="cadt-1">
+                <div class="Imgcad-1"><img src="Image (24).png"></div>
+
+                <div class="contentcad-1">
+
+                      <div class="titlecad-1">
+                           <div class="label"><p>Gudget Electronic</p></div>
+                           <p>Meta Galaxy X oliw10 5G sintra 256 GB</p>
+                      </div>
+
+                      <div class="BottomStatus">
+
+                      <div class="statuscad-1">
+                            <div class="pricecad-1"> 
+
+                               <p>$11.00</p>
+                               <div class="ratingcad-1">
+                                   <div class="Img2cad-1"><img src="Frame (18).png"></div>
+                                   <p>4.9</p>
+                               </div>
+
+                            </div>
+                      </div>
+
+                      <div class="informationcad-1">
+                           <div class="Img3cad-1">
+                               <img src="Frame (19).png">
+                               <p>Kota Yogyakarta</p>
+                           </div>
+                           <p>540 Sold</p>
+                      </div>
+
+                      </div>
+
+                </div>
+            </div>
+
+            <div class="cadt-1">
+                <div class="Imgcad-1"><img src="Image (25).png"></div>
+
+                <div class="contentcad-1-2">
+
+                      <div class="titlecad-1">
+                           <div class="label"><p>Fashion</p></div>
+                           <p>Overflow.id - Basic plain black t-shirt</p>
+                      </div>
+
+                      <div class="BottomStatus">
+
+                      <div class="statuscad-1">
+                            <div class="pricecad-1"> 
+
+                               <p>$17.34</p>
+                               <div class="ratingcad-1">
+                                   <div class="Img2cad-1"><img src="Frame (18).png"></div>
+                                   <p>4.8</p>
+                               </div>
+
+                            </div>
+                      </div>
+
+                      <div class="informationcad-1">
+                           <div class="Img3cad-1">
+                               <img src="Frame (19).png">
+                               <p>Kota Jakarta</p>
+                           </div>
+                           <p>200 Sold</p>
+                      </div>
+
+                      </div>
+
+                </div>
+            </div>
+
+         </div>
+
+        <div class="cardsBottom">
+
+          <div class="cadt-1">
+                <div class="Imgcad-1"><img src="Image (27).png"></div>
+
+                <div class="contentcad-1">
+
+                      <div class="titlecad-1">
+                           <div class="label"><p>Sports</p></div>
+                           <p>Leather bag packed with football</p>
+                      </div>
+
+                      <div class="BottomStatus">
+
+                      <div class="statuscad-1">
+                            <div class="pricecad-1"> 
+
+                               <p>$18.23</p>
+                               <div class="ratingcad-1">
+                                   <div class="Img2cad-1"><img src="Frame (18).png"></div>
+                                   <p>4.8</p>
+                               </div>
+
+                            </div>
+                      </div>
+
+                      <div class="informationcad-1">
+                           <div class="Img3cad-1">
+                               <img src="Frame (19).png">
+                               <p>Kota Solo</p>
+                           </div>
+                           <p>320 Sold</p>
+                      </div>
+
+                      </div>
+
+                </div>
+          </div>
+
+          <div class="cadt-1">
+              <div class="Imgcad-1"><img src="Image (28).png"></div>
+
+              <div class="contentcad-1">
+
+                    <div class="titlecad-1">
+                         <div class="label"><p>Woman Fashion</p></div>
+                         <p>Zineta Slip On Brown Sandals for Women</p>
+                    </div>
+
+                    <div class="BottomStatus">
+
+                    <div class="statuscad-1">
+                          <div class="pricecad-1"> 
+
+                             <p>$19.00</p>
+                             <div class="ratingcad-1">
+                                 <div class="Img2cad-1"><img src="Frame (18).png"></div>
+                                 <p>5.0</p>
+                             </div>
+
+                          </div>
+                    </div>
+
+                    <div class="informationcad-1">
+                         <div class="Img3cad-1">
+                             <img src="Frame (19).png">
+                             <p>Kota Yogyalarta</p>
+                         </div>
+                         <p>150 Sold</p>
+                    </div>
+
+                    </div>
+
+              </div>
+        
+          </div>
+
+          <div class="cadt-1">
+              <div class="Imgcad-1"><img src="Image (29).png"></div>
+
+              <div class="contentcad-1">
+
+                    <div class="titlecad-1">
+                         <div class="label"><p>Accessories</p></div>
+                         <p>Limited edition silver women's necklace</p>
+                    </div>
+
+                    <div class="BottomStatus">
+
+                    <div class="statuscad-1">
+                          <div class="pricecad-1"> 
+
+                             <p>$11.34</p>
+                             <div class="ratingcad-1">
+                                 <div class="Img2cad-1"><img src="Frame (18).png"></div>
+                                 <p>4.8</p>
+                             </div>
+
+                          </div>
+                    </div>
+
+                    <div class="informationcad-1">
+                         <div class="Img3cad-1">
+                             <img src="Frame (19).png">
+                             <p>Kota Semarang</p>
+                         </div>
+                         <p>240 Sold</p>
+                    </div>
+
+                    </div>
+
+              </div>
+          </div>
+
+          <div class="cadt-1">
+              <div class="Imgcad-1"><img src="Image (30).png"></div>
+
+              <div class="contentcad-1-2">
+
+                    <div class="titlecad-1">
+                         <div class="label"><p>Gaming</p></div>
+                         <p>Playstation Gamepad Stick Controller</p>
+                    </div>
+
+                    <div class="BottomStatus">
+
+                    <div class="statuscad-1">
+                          <div class="pricecad-1"> 
+
+                             <p>$10.00</p>
+                             <div class="ratingcad-1">
+                                 <div class="Img2cad-1"><img src="Frame (18).png"></div>
+                                 <p>4.8</p>
+                             </div>
+
+                          </div>
+                    </div>
+
+                    <div class="informationcad-1">
+                         <div class="Img3cad-1">
+                             <img src="Frame (19).png">
+                             <p>Kota Jakarta</p>
+                         </div>
+                         <p>320 Sold</p>
+                    </div>
+
+                    </div>
+
+              </div>
+          </div>
+
+          <div class="cadt-1">
+              <div class="Imgcad-1"><img src="Image (31).png"></div>
+
+              <div class="contentcad-1-2">
+
+                    <div class="titlecad-1">
+                         <div class="label"><p>Property</p></div>
+                         <p>Premium foam minimalist black chair</p>
+                    </div>
+
+                    <div class="BottomStatus">
+
+                    <div class="statuscad-1">
+                          <div class="pricecad-1"> 
+
+                             <p>$42.00</p>
+                             <div class="ratingcad-1">
+                                 <div class="Img2cad-1"><img src="Frame (18).png"></div>
+                                 <p>4.8</p>
+                             </div>
+
+                          </div>
+                    </div>
+
+                    <div class="informationcad-1">
+                         <div class="Img3cad-1">
+                             <img src="Frame (19).png">
+                             <p>Kota Bogor</p>
+                         </div>
+                         <p>1210 Sold</p>
+                    </div>
+
+                    </div>
+
+              </div>
+          </div>
+
+        </div>
+
+
+         
+
+
+
+
+
+
+
+
+
+         
+    </div>
+
+    <div class="BestShop">
+
+        <div class="banner10">
+            <img src="Banner.png">
+        </div>
+
+        <div class="ShopBest">
+            
+            <div class="BestShopText">
+                <p>Best Shop at The Moment</p>
+            </div>
+
+
+            <div class="bestCards">
+
+                <div class="BstCard-1">
+
+                    <div class="Img1BstCard-1">
+                          
+                          <div class="Img1bst">
+                            <img src="Image (32).png" alt="">
+
+                            <div class="Img2bst">
+                                <img src="Image (33).png" alt="">
+                              </div>
+                          </div>
+
+
+                    </div>
+
+                    <div class="MaincontentBstCard-1">
+
+                          <div class="NameShop">
+
+                              <p>Super Shop</p>
+
+                              <div class="Verification">
+
+                                   <p>Verification</p>
+
+                                   <div class="ImgVer">
+                                      <img src="Frame (20).png">
+                                   </div>
+
+                              </div>
+
+                          </div>
+
+                          <div class="contentFlex">
+
+                          <div class="SecondContentbst">
+                               
+                            <div class="firsthaf">
+
+                                <div class="topfirsthaf">
+                                    <p>Product</p>
+                                </div>
+
+                                <div class="bottomfirsthaf">
+                                    <p>1,264</p>
+                                </div>
+
+                            </div>
+
+                          </div>
+
+                          <div class="SecondContentbst">
+                               
+                            <div class="firsthaf">
+
+                                <div class="topfirsthaf">
+                                    <p>Followed</p>
+                                </div>
+
+                                <div class="bottomfirsthaf">
+                                    <p>5,325</p>
+                                </div>
+
+                            </div>
+
+                          </div>
+
+                          <div class="SecondContentbst">
+                               
+                            <div class="firsthaf">
+
+                                <div class="topfirsthaf">
+                                    <p>Sold</p>
+                                </div>
+
+                                <div class="bottomfirsthaf">
+                                    <p>5,264</p>
+                                </div>
+
+                            </div>
+
+                          </div>
+
+                          </div>
+
+                    </div>
+
+
+
+
+
+                </div>
+
+                <div class="BstCard-1">
+
+                    <div class="Img1BstCard-1">
+                          
+                          <div class="Img1bst">
+                            <img src="Image (35).png" alt="">
+
+                            <div class="Img2bst">
+                                <img src="Image (36).png" alt="">
+                              </div>
+                          </div>
+
+
+                    </div>
+
+                    <div class="MaincontentBstCard-1">
+
+                          <div class="NameShop">
+
+                              <p>Nine Fashion</p>
+
+                              <div class="Verification">
+
+                                   <p>Verification</p>
+
+                                   <div class="ImgVer">
+                                      <img src="Frame (20).png">
+                                   </div>
+
+                              </div>
+
+                          </div>
+
+                          <div class="contentFlex">
+
+                          <div class="SecondContentbst">
+                               
+                            <div class="firsthaf">
+
+                                <div class="topfirsthaf">
+                                    <p>Product</p>
+                                </div>
+
+                                <div class="bottomfirsthaf">
+                                    <p>5,264</p>
+                                </div>
+
+                            </div>
+
+                          </div>
+
+                          <div class="SecondContentbst">
+                               
+                            <div class="firsthaf">
+
+                                <div class="topfirsthaf">
+                                    <p>Followed</p>
+                                </div>
+
+                                <div class="bottomfirsthaf">
+                                    <p>6,352</p>
+                                </div>
+
+                            </div>
+
+                          </div>
+
+                          <div class="SecondContentbst">
+                               
+                            <div class="firsthaf">
+
+                                <div class="topfirsthaf">
+                                    <p>Sold</p>
+                                </div>
+
+                                <div class="bottomfirsthaf">
+                                    <p>8,356</p>
+                                </div>
+
+                            </div>
+
+                          </div>
+
+                          </div>
+
+                    </div>
+
+
+
+
+
+                </div>
+
+                <div class="BstCard-1">
+
+                    <div class="Img1BstCard-1">
+                          
+                          <div class="Img1bst">
+                            <img src="Image (37).png" alt="">
+
+                            <div class="Img2bst">
+                                <img src="Image (38).png" alt="">
+                              </div>
+                          </div>
+
+
+                    </div>
+
+                    <div class="MaincontentBstCard-1">
+
+                          <div class="NameShop">
+
+                              <p>Utopia Store</p>
+
+                              <div class="Verification">
+
+                                   <p>Verification</p>
+
+                                   <div class="ImgVer">
+                                      <img src="Frame (20).png">
+                                   </div>
+
+                              </div>
+
+                          </div>
+
+                          <div class="contentFlex">
+
+                          <div class="SecondContentbst">
+                               
+                            <div class="firsthaf">
+
+                                <div class="topfirsthaf">
+                                    <p>Product</p>
+                                </div>
+
+                                <div class="bottomfirsthaf">
+                                    <p>4,973</p>
+                                </div>
+
+                            </div>
+
+                          </div>
+
+                          <div class="SecondContentbst">
+                               
+                            <div class="firsthaf">
+
+                                <div class="topfirsthaf">
+                                    <p>Followed</p>
+                                </div>
+
+                                <div class="bottomfirsthaf">
+                                    <p>2,834</p>
+                                </div>
+
+                            </div>
+
+                          </div>
+
+                          <div class="SecondContentbst">
+                               
+                            <div class="firsthaf">
+
+                                <div class="topfirsthaf">
+                                    <p>Sold</p>
+                                </div>
+
+                                <div class="bottomfirsthaf">
+                                    <p>3,836</p>
+                                </div>
+
+                            </div>
+
+                          </div>
+
+                          </div>
+
+                    </div>
+
+
+
+
+
+                </div>
+
+                <div class="BstCard-1">
+
+                    <div class="Img1BstCard-1">
+                          
+                          <div class="Img1bst">
+                            <img src="Image (39).png" alt="">
+
+                            <div class="Img2bst">
+                                <img src="Image (40).png" alt="">
+                              </div>
+                          </div>
+
+
+                    </div>
+
+                    <div class="MaincontentBstCard-1">
+
+                          <div class="NameShop">
+
+                              <p>Music Zerna</p>
+
+                              <div class="Verification">
+
+                                   <p>Verification</p>
+
+                                   <div class="ImgVer">
+                                      <img src="Frame (20).png">
+                                   </div>
+
+                              </div>
+
+                          </div>
+
+                          <div class="contentFlex">
+
+                          <div class="SecondContentbst">
+                               
+                            <div class="firsthaf">
+
+                                <div class="topfirsthaf">
+                                    <p>Product</p>
+                                </div>
+
+                                <div class="bottomfirsthaf">
+                                    <p>2,736</p>
+                                </div>
+
+                            </div>
+
+                          </div>
+
+                          <div class="SecondContentbst">
+                               
+                            <div class="firsthaf">
+
+                                <div class="topfirsthaf">
+                                    <p>Followed</p>
+                                </div>
+
+                                <div class="bottomfirsthaf">
+                                    <p>3,345</p>
+                                </div>
+
+                            </div>
+
+                          </div>
+
+                          <div class="SecondContentbst">
+                               
+                            <div class="firsthaf">
+
+                                <div class="topfirsthaf">
+                                    <p>Sold</p>
+                                </div>
+
+                                <div class="bottomfirsthaf">
+                                    <p>2,132</p>
+                                </div>
+
+                            </div>
+
+                          </div>
+
+                          </div>
+
+                    </div>
+
+
+
+
+
+                </div>
+
+                <div class="BstCard-1">
+
+                    <div class="Img1BstCard-1">
+                          
+                          <div class="Img1bst">
+                            <img src="Rectangle 13.png" alt="">
+
+                            <div class="Img2bst">
+                                <img src="Image (41).png" alt="">
+                              </div>
+                          </div>
+
+
+                    </div>
+
+                    <div class="MaincontentBstCard-1">
+
+                          <div class="NameShop">
+
+                              <p>Amara Glow</p>
+
+                              <div class="Verification">
+
+                                   <p>Verification</p>
+
+                                   <div class="ImgVer">
+                                      <img src="Frame (20).png">
+                                   </div>
+
+                              </div>
+
+                          </div>
+
+                          <div class="contentFlex">
+
+                          <div class="SecondContentbst">
+                               
+                            <div class="firsthaf">
+
+                                <div class="topfirsthaf">
+                                    <p>Product</p>
+                                </div>
+
+                                <div class="bottomfirsthaf">
+                                    <p>5,083</p>
+                                </div>
+
+                            </div>
+
+                          </div>
+
+                          <div class="SecondContentbst">
+                               
+                            <div class="firsthaf">
+
+                                <div class="topfirsthaf">
+                                    <p>Followed</p>
+                                </div>
+
+                                <div class="bottomfirsthaf">
+                                    <p>4,084</p>
+                                </div>
+
+                            </div>
+
+                          </div>
+
+                          <div class="SecondContentbst">
+                               
+                            <div class="firsthaf">
+
+                                <div class="topfirsthaf">
+                                    <p>Sold</p>
+                                </div>
+
+                                <div class="bottomfirsthaf">
+                                    <p>3,376</p>
+                                </div>
+
+                            </div>
+
+                          </div>
+
+                          </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="Product10">
+
+        <div class="TopTitleLIne">
+         <p>Our Recommendation For You</p>
+        </div>
+
+        <div class="cardTop">
+             
+           <div class="cadt-1">
+                 <div class="Imgcad-1"><img src="Image (42).png"></div>
+
+                 <div class="contentcad-1">
+
+                       <div class="titlecad-1">
+                            <div class="label"><p>Computer & Laptop</p></div>
+                            <p>Original World Premiere Super 5 Pro Tablet 8gb</p>
+                       </div>
+
+                       <div class="BottomStatus">
+
+                       <div class="statuscad-1">
+                             <div class="pricecad-1"> 
+
+                                <p>$112.70</p>
+                                <div class="ratingcad-1">
+                                    <div class="Img2cad-1"><img src="Frame (18).png"></div>
+                                    <p>4.7</p>
+                                </div>
+
+                             </div>
+                       </div>
+
+                       <div class="informationcad-1">
+                            <div class="Img3cad-1">
+                                <img src="Frame (19).png">
+                                <p>Kota Bandung</p>
+                            </div>
+                            <p>390 Sold</p>
+                       </div>
+
+                       </div>
+
+                 </div>
+           </div>
+
+           <div class="cadt-1">
+               <div class="Imgcad-1"><img src="Image (43).png"></div>
+
+               <div class="contentcad-1">
+
+                     <div class="titlecad-1">
+                          <div class="label"><p>Property</p></div>
+                          <p>Wholcake GB38 - Living Room Chair with</p>
+                     </div>
+
+                     <div class="BottomStatus">
+
+                     <div class="statuscad-1">
+                           <div class="pricecad-1"> 
+
+                              <p>$16.54</p>
+                              <div class="ratingcad-1">
+                                  <div class="Img2cad-1"><img src="Frame (18).png"></div>
+                                  <p>4.8</p>
+                              </div>
+
+                           </div>
+                     </div>
+
+                     <div class="informationcad-1">
+                          <div class="Img3cad-1">
+                              <img src="Frame (19).png">
+                              <p>Kota Jakarta</p>
+                          </div>
+                          <p>500 Sold</p>
+                     </div>
+
+                     </div>
+
+               </div>
+         
+           </div>
+
+           <div class="cadt-1">
+               <div class="Imgcad-1"><img src="Image (44).png"></div>
+
+               <div class="contentcad-1">
+
+                     <div class="titlecad-1">
+                          <div class="label"><p>Computer & Laptop</p></div>
+                          <p>Orneo minibook DP721 FLC I7 10510 16gb 512ssd</p>
+                     </div>
+
+                     <div class="BottomStatus">
+
+                     <div class="statuscad-1">
+                           <div class="pricecad-1"> 
+
+                              <p>$228.23</p>
+                              <div class="ratingcad-1">
+                                  <div class="Img2cad-1"><img src="Frame (18).png"></div>
+                                  <p>4.9</p>
+                              </div>
+
+                           </div>
+                     </div>
+
+                     <div class="informationcad-1">
+                          <div class="Img3cad-1">
+                              <img src="Frame (19).png">
+                              <p>Kota Surabaya</p>
+                          </div>
+                          <p>450 Sold</p>
+                     </div>
+
+                     </div>
+
+               </div>
+           </div>
+
+           <div class="cadt-1">
+               <div class="Imgcad-1"><img src="Image (45).png"></div>
+
+               <div class="contentcad-1-2-2">
+
+                     <div class="titlecad-1">
+                          <div class="label"><p>Gudget Electronic</p></div>
+                          <p>Black and yellow cap headwear</p>
+                     </div>
+
+                     <div class="BottomStatus">
+
+                     <div class="statuscad-1">
+                           <div class="pricecad-1"> 
+
+                              <p>$11.00</p>
+                              <div class="ratingcad-1">
+                                  <div class="Img2cad-1"><img src="Frame (18).png"></div>
+                                  <p>4.9</p>
+                              </div>
+
+                           </div>
+                     </div>
+
+                     <div class="informationcad-1">
+                          <div class="Img3cad-1">
+                              <img src="Frame (19).png">
+                              <p>Kota Yogyakarta</p>
+                          </div>
+                          <p>540 Sold</p>
+                     </div>
+
+                     </div>
+
+               </div>
+           </div>
+
+           <div class="cadt-1">
+               <div class="Imgcad-1"><img src="Image (46).png"></div>
+
+               <div class="contentcad-1-2-2">
+
+                     <div class="titlecad-1">
+                          <div class="label"><p>Fashion</p></div>
+                          <p>Domtrain Hiking Mountain Backpack</p>
+                     </div>
+
+                     <div class="BottomStatus">
+
+                     <div class="statuscad-1">
+                           <div class="pricecad-1"> 
+
+                              <p>$27.31</p>
+                              <div class="ratingcad-1">
+                                  <div class="Img2cad-1"><img src="Frame (18).png"></div>
+                                  <p>4.8</p>
+                              </div>
+
+                           </div>
+                     </div>
+
+                     <div class="informationcad-1">
+                          <div class="Img3cad-1">
+                              <img src="Frame (19).png">
+                              <p>Kota Jakarta</p>
+                          </div>
+                          <p>200 Sold</p>
+                     </div>
+
+                     </div>
+
+               </div>
+           </div>
+
+        </div>
+
+       <div class="cardsBottom">
+
+         <div class="cadt-1">
+               <div class="Imgcad-1"><img src="Image (44).png"></div>
+
+               <div class="contentcad-1">
+
+                     <div class="titlecad-1">
+                          <div class="label"><p>Computer & Laptop</p></div>
+                          <p>Super Zeplin M26 (2022) - GG726XM-G9374G6T-1</p>
+                     </div>
+
+                     <div class="BottomStatus">
+
+                     <div class="statuscad-1">
+                           <div class="pricecad-1"> 
+
+                              <p>$215.10</p>
+                              <div class="ratingcad-1">
+                                  <div class="Img2cad-1"><img src="Frame (18).png"></div>
+                                  <p>4.7</p>
+                              </div>
+
+                           </div>
+                     </div>
+
+                     <div class="informationcad-1">
+                          <div class="Img3cad-1">
+                              <img src="Frame (19).png">
+                              <p>Kota Bandung</p>
+                          </div>
+                          <p>390 Sold</p>
+                     </div>
+
+                     </div>
+
+               </div>
+         </div>
+
+         <div class="cadt-1">
+             <div class="Imgcad-1"><img src="Image (47).png"></div>
+
+             <div class="contentcad-1">
+
+                   <div class="titlecad-1">
+                        <div class="label"><p>Computer & Laptop</p></div>
+                        <p>Dark King M346 Mechanical Keyboard - Free 31 Keys</p>
+                   </div>
+
+                   <div class="BottomStatus">
+
+                   <div class="statuscad-1">
+                         <div class="pricecad-1"> 
+
+                            <p>$12.54</p>
+                            <div class="ratingcad-1">
+                                <div class="Img2cad-1"><img src="Frame (18).png"></div>
+                                <p>4.8</p>
+                            </div>
+
+                         </div>
+                   </div>
+
+                   <div class="informationcad-1">
+                        <div class="Img3cad-1">
+                            <img src="Frame (19).png">
+                            <p>Kota Jakarta</p>
+                        </div>
+                        <p>500 Sold</p>
+                   </div>
+
+                   </div>
+
+             </div>
+       
+         </div>
+
+         <div class="cadt-1">
+             <div class="Imgcad-1"><img src="Image (48).png"></div>
+
+             <div class="contentcad-1">
+
+                   <div class="titlecad-1">
+                        <div class="label"><p>Fashion Man</p></div>
+                        <p>Reader Touring Coboy Brc Black Leather Boots</p>
+                   </div>
+
+                   <div class="BottomStatus">
+
+                   <div class="statuscad-1">
+                         <div class="pricecad-1"> 
+
+                            <p>$23.24</p>
+                            <div class="ratingcad-1">
+                                <div class="Img2cad-1"><img src="Frame (18).png"></div>
+                                <p>4.9</p>
+                            </div>
+
+                         </div>
+                   </div>
+
+                   <div class="informationcad-1">
+                        <div class="Img3cad-1">
+                            <img src="Frame (19).png">
+                            <p>Kota Surabaya</p>
+                        </div>
+                        <p>450 Sold</p>
+                   </div>
+
+                   </div>
+
+             </div>
+         </div>
+
+         <div class="cadt-1">
+             <div class="Imgcad-1"><img src="Image (49).png"></div>
+
+             <div class="contentcad-1">
+
+                   <div class="titlecad-1">
+                        <div class="label"><p>Gudget Electronic</p></div>
+                        <p>PMeta Galaxy X oliw10 5G sintra 256 GB</p>
+                   </div>
+
+                   <div class="BottomStatus">
+
+                   <div class="statuscad-1">
+                         <div class="pricecad-1"> 
+
+                            <p>$11.00</p>
+                            <div class="ratingcad-1">
+                                <div class="Img2cad-1"><img src="Frame (18).png"></div>
+                                <p>4.9</p>
+                            </div>
+
+                         </div>
+                   </div>
+
+                   <div class="informationcad-1">
+                        <div class="Img3cad-1">
+                            <img src="Frame (19).png">
+                            <p>Kota Yogyakarta</p>
+                        </div>
+                        <p>540 Sold</p>
+                   </div>
+
+                   </div>
+
+             </div>
+         </div>
+
+         <div class="cadt-1">
+             <div class="Imgcad-1"><img src="Image (50).png"></div>
+
+             <div class="contentcad-1-2-2">
+
+                   <div class="titlecad-1">
+                        <div class="label"><p>Fashion</p></div>
+                        <p>Overflow.id - Basic plain black t-shirt</p>
+                   </div>
+
+                   <div class="BottomStatus">
+
+                   <div class="statuscad-1">
+                         <div class="pricecad-1"> 
+
+                            <p>$17.34</p>
+                            <div class="ratingcad-1">
+                                <div class="Img2cad-1"><img src="Frame (18).png"></div>
+                                <p>4.8</p>
+                            </div>
+
+                         </div>
+                   </div>
+
+                   <div class="informationcad-1">
+                        <div class="Img3cad-1">
+                            <img src="Frame (19).png">
+                            <p>Kota Jakarta</p>
+                        </div>
+                        <p>200 Sold</p>
+                   </div>
+
+                   </div>
+
+             </div>
+         </div>
+
+       </div>
+
+
+        
+
+
+
+
+
+
+
+
+
+        
+   </div>
+
+   <div class="FinalContent">
+
+        <div class="Vector9"></div>
+
+        <div class="FinalText">
+             
+             <div class="FText">
+                 <h2>Now it's easier to open your shop</h2>
+                 <p>With simple step by step and easy help instructions to follow</p>
+             </div>
+
+             <div class="FinalBtn">
+                <p>Open Shop</p>
+                <div class="FinalVector"><img src="Vector (24).png"></div>
+             </div>
+
+        </div>
+
+        <div class="Vector9"></div>
+
+        <div class="Brands">
+
+            <h2>Brand & Categories</h2>
+
+            <div class="FinalContentText">
+
+                <div class="FinalCard-1">
+
+                      <h2>Fashion Man</h2>
+
+                      <div class="FashionText">
+                           <p>Zeneta Fashion</p>
+                           <p>Xgard 304</p>
+                           <p>Never Star</p>
+                           <p>Rillingen Hood</p>
+                           <p>DropBrain</p>
+                           <p>Red Pride</p>
+                           <p>Onedry 1998</p>
+                           <p>Starclothing</p>
+                      </div>
+
+                </div>
+
+                <div class="FinalCard-2">
+
+                    <h2>Woman Fashion</h2>
+
+                    <div class="FashionText">
+                         <p>Fushion</p>
+                         <p>Aneta Glowing</p>
+                         <p>Amanda 19</p>
+                         <p>Kiosku</p>
+                         <p>Womandry</p>
+                         <p>Ababil</p>
+                         <p>Lowly Cloth</p>
+                    </div>
+
+                </div>
+
+                <div class="FinalCard-3">
+
+                    <h2>Automotive</h2>
+
+                    <div class="FashionText">
+                         <p>Star Label</p>
+                         <p>My Star</p>
+                         <p>Automotive 09</p>
+                         <p>Racedrag</p>
+                         <p>Speedone</p>
+                         <p>Racer Shop</p>
+                         <p>Bengkel Motor 22</p>
+                         <p>Speedy Race</p>
+                    </div>
+
+                </div>
+
+                <div class="FinalCard-4">
+
+                    <h2>Sports</h2>
+
+                    <div class="FashionText">
+                         <p>Extra time ID</p>
+                         <p>Football Boys</p>
+                         <p>Onesports</p>
+                         <p>Liveball.id</p>
+                         <p>Sport 17</p>
+                         <p>Ball Player</p>
+                         <p>Aneta Futboll</p>
+                    </div>
+
+                </div>
+
+                <div class="FinalCard-5">
+
+                    <h2>Accesories</h2>
+
+                    <div class="FashionText">
+                         <p>Antena</p>
+                         <p>Glimming</p>
+                         <p>Storeku</p>
+                         <p>Cempaka Store</p>
+                         <p>Memee.id</p>
+                    </div>
+
+                </div>
+
+                <div class="FinalCard-6">
+
+                  <h2>Gaming</h2>
+
+                  <div class="FashionText">
+                       <p>Stargame.id</p>
+                       <p>Dunia Games</p>
+                       <p>Vale Store</p>
+                       <p>Decade</p>
+                       <p>Deff Store</p>
+                       <p>Press Start.id</p>
+                  </div>
+
+                </div>
+
+                <div class="FinalCard-7">
+
+                  <h2>Electronic</h2>
+
+                  <div class="FashionText">
+                       <p>Plotion</p>
+                       <p>Green Shop</p>
+                       <p>Simsang</p>
+                       <p>Semea.Store</p>
+                       <p>Ximpling Store 99</p>
+                       <p>Bobby.id</p>
+                       <p>Chinly</p>
+                       <p>Store House</p>
+                  </div>
+
+                </div>
+
+                <div class="FinalCard-8">
+
+                  <h2>Property</h2>
+
+                  <div class="FashionText">
+                       <p>Green Property</p>
+                       <p>A-Naiku House</p>
+                       <p>Dentis World</p>
+                       <p>A Property</p>
+                       <p>Bolam.id</p>
+                       <p>Houseme.Store</p>
+                       <p>PAUSMEN</p>
+                  </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="Vector9"></div>
+
+        <div class="Peyment">
+            <h2>Payment Method</h2>
+
+            <div class="Finalimgaes">
+                <img src="Image (51).png" alt="">
+                <img src="Image (52).png" alt="">
+                <img src="Image (53).png" alt="">
+                <img src="Image (54).png" alt="">
+                <img src="Image (55).png" alt="">
+                <img src="Image (56).png" alt="">
+                <img src="Image (56).png" alt="">
+                <img src="Image (58).png" alt="">
+                <img src="Image (57).png" alt="">
+            </div>
+        </div>
+
+        <div class="Vector9"></div>
+
+        <div class="SlabsShopFinal">
+             
+              <div class="SlabShopText">
+                  <h2>Slabshop</h2>
+                  <p>
+                    Aims to make it easier for every community in the world to carry out various buying and selling transactions online. 
+                    Is one of the world's online buying and selling sites whose development is relatively fast.you can sell products onli
+                    ne at the slabshop besides being able to enjoy the process of buying various products more quickly and effectively.Yo
+                    u can sign up for the exclusive slabshop Seller community if you want to launch your own business.
+                </p>
+              </div>
+
+              <div class="SlabShopText-2">
+                 <h2>Advantages of joining Slabshop</h2>
+                 <div class="SlabText">
+                    Festive advertising In addition to offering all available product categories, Slabshop also regularly runs attractive
+                    promotions with prices you can access on the promo page. There are many options for promotions with different validi
+                    ty periods for various products, from smartphone promotions to promotions for inexpensive train tickets. The process
+                    is also very simple; all you have to do is enter the current coupon code or promotional code for the item you want 
+                    to buy. festive advertising In addition to offering all available product categories, Slabshop also regularly runs 
+                    attractive promotions with prices you can access on the promo page. There are many options for promotions with dif
+                    ferent validity periods for various products, from smartphone promotions to promotions for inexpensive train tickets.
+                    The process is also very simple,
+                    
+                    <div onclick= "Show()" ondblclick= "Hide()" class="Show" >Readmore</div> 
+                    <div class="Hide"> 
+                         Festive advertising In addition to offering all available product categories, Slabshop also regularly runs attractive
+                        promotions with prices you can access on the promo page. There are many options for promotions with different validi
+                        ty periods for various products, from smartphone promotions to promotions for inexpensive train tickets. The process
+                        is also very simple; all you have to do is enter the current coupon code or promotional code for the item you want 
+                        to buy. festive advertising In addition to offering all available product categories, Slabshop also regularly runs 
+                        attractive promotions with prices you can access on the promo page. There are many options for promotions with dif
+                        ferent validity periods for various products, from smartphone promotions to promotions for inexpensive train tickets.
+                        The process is also very simple,
+                    </div>
+                </div>
+              </div>
+
+        </div>
+
+        <div class="Vector9"></div>
+
+        <div class="lastText">
+
+            <div class="LastLeft">
+                <p>Slabshop © 2021-2022, All Rights Reserved</p>
+            </div>
+
+            <div class="LastRight">
+                <p>Privacy Policy</p>
+                <p>Terms Of Use</p>
+                <p>FAQ</p>
+            </div>
+
+        </div>
+
+
+   </div>
+
+   <script src="script.js"></script>
+
+</body>
+</html>
